@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A CSS Button with TEXT & ICON</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    /*.btn-wrapper {
+      border: 1px solid black;
+      height: 45px;
+      width: 182px;
+    }*/
+
+    .btn {
+      display: inline-block;
+      width: 182px;
+      height: 45px;
+
+      border-radius: 26px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 16px;
+
+      line-height: 45px;
+      box-shadow: 0 2px 3px 0px #55555557;
+    }
+
+    .btn-download {
+      background-color: #91c53f;
+      color: white;
+    }
+
+    .btn-email {
+      background-color: #ebad3a;
+      color: white;
+    }
+
+    .btn i {
+      width: 45px;
+      height: 45px;
+      /*transform: translateY(-14px);*/
+      border-radius: 26px;
+
+      text-align: center;
+      line-height: 45px;
+
+      font-size: 30px;
+
+      box-shadow: 0 2px 3px 0px #55555557;
+    }
+
+    .btn-download i {
+      background-color: white;
+      color: #91c53f;
+    }
+
+    .btn-email i {
+      background-color: #fff;
+      color: #ebad3a;
+    }
+    .btn span {
+      display: inline-block;
+      transform: translateY(-5px);
+      width: 117px;
+      text-align: center;
+      letter-spacing: .5px;
+    }
+    .hover-download:hover {
+      background-color: #619361;
+    }
+    .hover-download i:hover {
+      color: #619361;
+    }
+    .hover-email:hover {
+      background-color: #9f6b0c;
+    }
+    .hover-email i:hover {
+      color: #9f6b0c;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>A CSS Button with TEXT & ICON</h1>
+  <div class="btn-wrapper">
+
+  <!--
+    button, a
+
+    BEM:
+    btn: common button styles
+    btn-download: specific button styles
+  -->
+  <a class="btn btn-download hover-download" href="/download"><i class="fa-solid fa-cloud-arrow-down"></i>
+    <span>Download</span> 
+  </a><br><br>
+  <a href="/mail" class="btn btn-email hover-email"><i class="fa-solid fa-envelope"></i>
+    <span>E-mail</span>
+  </a>
+  </div>
+</body>
+</html>
