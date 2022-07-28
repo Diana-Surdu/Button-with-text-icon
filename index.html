@@ -69,19 +69,22 @@
       text-align: center;
       letter-spacing: .5px;
     }
-    .hover-download:hover {
-      background-color: #619361;
-    }
-    .hover-download i:hover {
+    .btn-download-hov:hover i {
       color: #619361;
     }
-    .hover-email:hover {
-      background-color: #9f6b0c;
+
+    .btn-download:hover {
+      background-color: #619361;
     }
-    .hover-email i:hover {
+
+    .btn-email-hov:hover i {
       color: #9f6b0c;
     }
-    
+
+    .btn-email-hov:hover {
+      background-color: #9f6b0c;
+    }
+
   </style>
 </head>
 <body>
@@ -95,10 +98,10 @@
     btn: common button styles
     btn-download: specific button styles
   -->
-  <a class="btn btn-download hover-download" href="/download"><i class="fa-solid fa-cloud-arrow-down"></i>
+  <a class="btn btn-download btn-download-hov" href="/download"><i class="fa-solid fa-cloud-arrow-down"></i>
     <span>Download</span> 
   </a><br><br>
-  <a href="/mail" class="btn btn-email hover-email"><i class="fa-solid fa-envelope"></i>
+  <a href="/mail" class="btn btn-email btn-email-hov"><i class="fa-solid fa-envelope"></i>
     <span>E-mail</span>
   </a>
   </div>
